@@ -1,0 +1,6 @@
+/* Add application styles & imports to this file! */
+body, html, input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
