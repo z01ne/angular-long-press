@@ -38,6 +38,8 @@ export class LongPressDirective
   @HostListener('mousedown', ['$event'])
   pressDown(event: any)
   {
+    if (event instanceof MouseEvent && event.button != 0)
+      return;
     if (event instanceof TouchEvent)
     {
       this.touchX = event.targetTouches[0].clientX;
