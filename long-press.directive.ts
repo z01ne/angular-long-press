@@ -64,11 +64,9 @@ export class LongPressDirective
   {
     if (event.type === 'touchmove')
     {
-      console.log('event', event);
       let validDistance = 50;
       let dx = Math.abs(this.touchX - event.targetTouches[0].clientX);
       let dy = Math.abs(this.touchY - event.targetTouches[0].clientY);
-      console.log('dx', dx, 'dy', dy);
       if (dx < validDistance && dy < validDistance) return false;
     }
     clearTimeout(this.timeout);
